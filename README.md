@@ -52,3 +52,42 @@ export default StartScreen
 ### Criando demais componentes e estágios do jogo
 
 Nesta etapa eu criei todos os demais componentes GameOver e Game, e iniciei os estágios do jogo, como: inicio, jogo, e jogo acabou. Utilizei o useState para criar o hook gameStage e setGameStage que utilizará o valor "name" da array stages.
+
+### Avançando nos estágios do game
+
+Nesta fase do projeto, foi essencial avançar nos estágios do jogo para proporcionar uma experiência interativa para o jogador. Para isso, utilizei a função setGameStage para atualizar o estado de gameStage. Aqui está um exemplo de como as transições de estágio podem ocorrer:
+
+```
+const startGame = () => {
+  // Escolher uma palavra e categoria aleatórias
+  const { word, category } = pickWordAndCategory();
+
+  // Dividir a palavra em letras minúsculas
+  const splitWord = word.split("").map((l) => l.toLowerCase());
+
+  // Preencher os estados com os valores escolhidos
+  setPickedWord(word);
+  setPickedCategory(category);
+  setLetters(splitWord);
+
+  // Avançar para a fase de jogo
+  setGameStage(stages[1].name); // Por exemplo, avançando para a segunda fase do jogo
+};
+
+```
+
+### Implementando os componentes GameOver e Game
+
+Durante o desenvolvimento, criei os componentes GameOver e Game para gerenciar as diferentes partes do jogo. O GameOver será exibido quando o jogador perder ou concluir o jogo, enquanto o Game será a parte principal do jogo, onde o jogador faz suas tentativas.
+
+### Gerenciando os componentes e estágios
+
+Para gerenciar os diferentes componentes e estágios do jogo, você pode usar condicionais ou um sistema de roteamento, dependendo da complexidade do seu jogo. Por exemplo, se o jogo estiver na fase de início, você pode exibir o componente StartScreen. Quando estiver no meio do jogo, pode ser exibido o componente Game. E quando o jogo acabar, você pode alternar para o componente GameOver.
+
+### Aprimoramentos futuros
+No futuro, é possível implementar recursos adicionais, como:
+Sistema de pontuação para rastrear o desempenho do jogador.
+Dicas ou pistas para ajudar o jogador a adivinhar a palavra.
+Personalização de aparência e estilos para tornar o jogo mais atraente.
+Integração de som ou música de fundo para melhorar a experiência do jogador.
+Espero que este projeto tenha sido uma oportunidade valiosa para aprimorar suas habilidades em React e desenvolvimento de jogos. Continuar explorando e aprimorando o projeto pode ser uma ótima maneira de aprender mais e se preparar para oportunidades futuras como desenvolvedor.
