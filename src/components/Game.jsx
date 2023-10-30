@@ -1,10 +1,13 @@
-import React from 'react'
-import "./Game.css"
+import React from "react";
+import "./Game.css";
 
-const Game = () => {
+const Game = ({ verifyLetter }) => {
   return (
-    <div>Game</div>
-  )
-}
+    <div>
+      <h1>game</h1>
+      <button onClick={verifyLetter}>Finalizar o jogo</button>
+    </div>
+  );
+};
 
-export default Game
+export default Game;

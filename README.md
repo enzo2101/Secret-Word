@@ -8,6 +8,8 @@ Esse projeto secret word foi feito com o intuito de testar meus conhecimento em 
 
 - Criação do primeiro componente e customização de alguns Css.
 
+- Criando demais componentes e estágios do jogo.
+
 ### Inicialização do projeto
 Para iniciarmos o projeto e instalar todas as dependencias do projeto, fiz a inicialização do react com o vite, (uma forma mais rápida de criar um projeto react), além disso antes de tudo criei o repositorio no github.
 
@@ -46,3 +48,7 @@ const StartScreen = () => {
 
 export default StartScreen
 ```
+
+### Criando demais componentes e estágios do jogo
+
+Nesta etapa eu criei todos os demais componentes GameOver e Game, e iniciei os estágios do jogo, como: inicio, jogo, e jogo acabou. Utilizei o useState para criar o hook gameStage e setGameStage que utilizará o valor "name" da array stages.
