@@ -1,8 +1,48 @@
-# React + Vite
+# Projeto Secret Word
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esse projeto secret word foi feito com o intuito de testar meus conhecimento em react. Além de testar meu conhecimento em commits, e servindo como preparo para o mundo de trabalho como desenvolvedor.
 
-Currently, two official plugins are available:
+## Index
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Inicialização do projeto usando React + Vite
+
+- Criação do primeiro componente e customização de alguns Css.
+
+### Inicialização do projeto
+Para iniciarmos o projeto e instalar todas as dependencias do projeto, fiz a inicialização do react com o vite, (uma forma mais rápida de criar um projeto react), além disso antes de tudo criei o repositorio no github.
+
+```
+npm create vite@latest
+```
+
+logo em seguinda atribui o nome Secret-Word e segui as seguintes instruções: 
+### React >> javascript
+
+```
+cd Secret-Word
+```
+```
+npm i
+```
+```
+npm run dev
+```
+
+### Criando o primeiro componente
+O Primeiro componente criado foi o StartScreen.jsx + StartScreen.css,
+a função dele é básica apenas ser a página inicial do projeto e ter a opção de iniciar o jogo, iniciei o StartScreen.jsx com o snippet.
+```
+rafce
+```
+que gerará esse código automaticamente caso esteja usando a extensão ES7+ React/Redux/React-Native snippets
+```
+import React from 'react'
+
+const StartScreen = () => {
+  return (
+    <div>StartScreen</div>
+  )
+}
+
+export default StartScreen
+```
