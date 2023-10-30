@@ -34,7 +34,6 @@ const Game = ({
       <h3 className="tip">
         Dica sobre a palavra: <span>{pickedCategory}</span>
       </h3>
-      {guesses === 0 && <p>Você não tem mais tentativas</p> }
       {guesses === 1 && <p>Você ainda tem {guesses} tentativa</p>}
       {guesses > 1 && <p>Você ainda tem {guesses} tentativas</p> }
       <div className="wordContainer">
